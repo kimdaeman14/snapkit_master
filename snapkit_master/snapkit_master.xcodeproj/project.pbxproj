@@ -10,8 +10,10 @@
 		20D6041023D30F6C0052564A /* RectangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D6040F23D30F6C0052564A /* RectangleViewController.swift */; };
 		20D6043323D321850052564A /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D6043223D321850052564A /* ImageTableViewController.swift */; };
 		20D6043623D321B00052564A /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D6043523D321B00052564A /* ImageViewCell.swift */; };
-		20D6044123D361A00052564A /* DynamicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D6044023D361A00052564A /* DynamicTableViewController.swift */; };
-		20D6044323D361E80052564A /* DynamicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D6044223D361E80052564A /* DynamicCell.swift */; };
+		20D6045023D369F90052564A /* DynamicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D6044F23D369B80052564A /* DynamicCell.swift */; };
+		20D6045123D369F90052564A /* DynamicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D6044E23D369B80052564A /* DynamicTableViewController.swift */; };
+		20D6045923D36A610052564A /* DyImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D6045823D36A610052564A /* DyImageTableViewController.swift */; };
+		20D6045B23D36A7F0052564A /* DyImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D6045A23D36A7F0052564A /* DyImageCell.swift */; };
 		523117FB23D17E0A00FC59B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523117FA23D17E0A00FC59B3 /* AppDelegate.swift */; };
 		523117FF23D17E0A00FC59B3 /* BasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523117FE23D17E0A00FC59B3 /* BasicTableViewController.swift */; };
 		5231180423D17E0B00FC59B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5231180323D17E0B00FC59B3 /* Assets.xcassets */; };
@@ -26,8 +28,10 @@
 		20D6040F23D30F6C0052564A /* RectangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleViewController.swift; sourceTree = "<group>"; };
 		20D6043223D321850052564A /* ImageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
 		20D6043523D321B00052564A /* ImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
-		20D6044023D361A00052564A /* DynamicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DynamicTableViewController.swift; path = ../../../../Documents/DynamicTableViewController.swift; sourceTree = "<group>"; };
-		20D6044223D361E80052564A /* DynamicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DynamicCell.swift; path = ../../../../Documents/DynamicCell.swift; sourceTree = "<group>"; };
+		20D6044E23D369B80052564A /* DynamicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableViewController.swift; sourceTree = "<group>"; };
+		20D6044F23D369B80052564A /* DynamicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCell.swift; sourceTree = "<group>"; };
+		20D6045823D36A610052564A /* DyImageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DyImageTableViewController.swift; path = ../../../../../Documents/DyImageTableViewController.swift; sourceTree = "<group>"; };
+		20D6045A23D36A7F0052564A /* DyImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DyImageCell.swift; path = ../../../../../Documents/DyImageCell.swift; sourceTree = "<group>"; };
 		38D10A9914239795D970760A /* Pods-snapkit_master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snapkit_master.release.xcconfig"; path = "Target Support Files/Pods-snapkit_master/Pods-snapkit_master.release.xcconfig"; sourceTree = "<group>"; };
 		514F14CAD29E48BD942EC97D /* Pods-snapkit_master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snapkit_master.debug.xcconfig"; path = "Target Support Files/Pods-snapkit_master/Pods-snapkit_master.debug.xcconfig"; sourceTree = "<group>"; };
 		523117F723D17E0A00FC59B3 /* snapkit_master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snapkit_master.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,11 +84,22 @@
 			path = ImageTableView;
 			sourceTree = "<group>";
 		};
-		20D6043D23D360730052564A /* DynamicTableView */ = {
+		20D6045223D36A190052564A /* DynamicTableView */ = {
 			isa = PBXGroup;
 			children = (
+				20D6044E23D369B80052564A /* DynamicTableViewController.swift */,
+				20D6044F23D369B80052564A /* DynamicCell.swift */,
 			);
 			path = DynamicTableView;
+			sourceTree = "<group>";
+		};
+		20D6045323D36A2D0052564A /* DyImageTableView */ = {
+			isa = PBXGroup;
+			children = (
+				20D6045823D36A610052564A /* DyImageTableViewController.swift */,
+				20D6045A23D36A7F0052564A /* DyImageCell.swift */,
+			);
+			path = DyImageTableView;
 			sourceTree = "<group>";
 		};
 		523117EE23D17E0A00FC59B3 = {
@@ -115,9 +130,8 @@
 				5231181923D194B100FC59B3 /* SimpleMenu */,
 				20D6041123D30F780052564A /* Rectangle */,
 				20D6043423D3218B0052564A /* ImageTableView */,
-				20D6043D23D360730052564A /* DynamicTableView */,
-				20D6044023D361A00052564A /* DynamicTableViewController.swift */,
-				20D6044223D361E80052564A /* DynamicCell.swift */,
+				20D6045223D36A190052564A /* DynamicTableView */,
+				20D6045323D36A2D0052564A /* DyImageTableView */,
 			);
 			path = snapkit_master;
 			sourceTree = "<group>";
@@ -271,16 +285,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D6045023D369F90052564A /* DynamicCell.swift in Sources */,
 				20D6043323D321850052564A /* ImageTableViewController.swift in Sources */,
 				5231181523D18BFC00FC59B3 /* ListViewController.swift in Sources */,
 				523117FF23D17E0A00FC59B3 /* BasicTableViewController.swift in Sources */,
+				20D6045B23D36A7F0052564A /* DyImageCell.swift in Sources */,
 				523117FB23D17E0A00FC59B3 /* AppDelegate.swift in Sources */,
 				20D6043623D321B00052564A /* ImageViewCell.swift in Sources */,
 				5231181823D194AD00FC59B3 /* SimpleMenuViewController.swift in Sources */,
+				20D6045923D36A610052564A /* DyImageTableViewController.swift in Sources */,
 				20D6041023D30F6C0052564A /* RectangleViewController.swift in Sources */,
-				20D6044123D361A00052564A /* DynamicTableViewController.swift in Sources */,
+				20D6045123D369F90052564A /* DynamicTableViewController.swift in Sources */,
 				5231181B23D19CC400FC59B3 /* SimpleButton.swift in Sources */,
-				20D6044323D361E80052564A /* DynamicCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

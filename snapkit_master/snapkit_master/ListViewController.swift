@@ -25,7 +25,8 @@ class ListViewController: UIViewController {
         SimpleMenuViewController(),
         RectangleViewController(),
         ImageTableViewController(),
-        DynamicTableViewController()
+        DynamicTableViewController(),
+        DyImageTableViewController()
     ]
     
     
