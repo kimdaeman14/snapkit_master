@@ -17,16 +17,16 @@ class SimpleButton: UIButton{
     self.setTitle(title, for: .normal)
     self.backgroundColor = color
     self.addTarget(self, action:#selector(self.buttonDidTap), for: .touchUpInside)
-    setup()
+    setupUI()
   }
   
   required init?(coder: NSCoder) {
     super.init(coder: coder)
-    setup()
+    setupUI()
   }
   
   
-  func setup() {
+  func setupUI() {
 //    setTitleColor(.yellow, for: .normal)
 //    layer.cornerRadius   = 25
 //    layer.borderWidth    = 3.0

@@ -11,10 +11,10 @@ import SnapKit
 
 
 class BasicTableViewController: UIViewController {
-  let cellName = "cell"
+  let cellReuseIdentifier = "cell"
   var didSetupConstraints = false
   
-  let menuList = Array(100000000...100000020).map{"\($0)"}
+  let menuList = Array(1...20).map{"\($0)"}
   
   
   let tableView: UITableView = {
@@ -71,7 +71,7 @@ extension BasicTableViewController: UITableViewDelegate, UITableViewDataSource {
     self.tableView.dataSource = self
     self.tableView.delegate = self
     self.tableView.rowHeight = 44
-    self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: self.cellName)
+    self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: self.cellReuseIdentifier)
   }
   
   public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -80,7 +80,7 @@ extension BasicTableViewController: UITableViewDelegate, UITableViewDataSource {
   }
   
   public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.cellName)!
+    let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.cellReuseIdentifier)!
     cell.textLabel?.text = self.menuList[indexPath.row]
     return cell
     

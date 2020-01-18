@@ -21,7 +21,7 @@ class SimpleMenuViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     initUI()
-    setLayout()
+    setupUI()
   }
   
   
@@ -45,7 +45,7 @@ extension SimpleMenuViewController {
   }
   
   
-  func setLayout(){
+  func setupUI(){
     self.button1.snp.makeConstraints { make in
       make.center.equalTo(self.view)
       make.leading.equalTo(self.view)

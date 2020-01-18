@@ -23,7 +23,9 @@ class ListViewController: UIViewController {
     let viewControllers = [
         BasicTableViewController(),
         SimpleMenuViewController(),
-        RectangleViewController()
+        RectangleViewController(),
+        ImageTableViewController(),
+        DynamicTableViewController()
     ]
     
     

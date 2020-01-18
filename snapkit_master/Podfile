@@ -9,5 +9,5 @@ target 'snapkit_master' do
 
   pod 'SnapKit'
   pod 'Then'
-
+  pod 'Kingfisher'
 end
